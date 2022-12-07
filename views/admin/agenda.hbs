@@ -1,0 +1,42 @@
+<div>
+
+    <div class="linea1">
+        <H1>Bongiorno mi amigo/a {{persona}}</H1>
+        <button class="boton"><a type="button" href="/admin/login/logout">Cerrar sesion</a></button>
+    </div>
+
+    <div class="linea2">
+        <div class="encabezado">
+            <h2>Listado de recitales</h2>
+            <button class="boton"><a href="/admin/agenda/agregar">Agregar</a></button>
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Local</th>
+                <th scope="col">Ciudad</th>
+                <th scope="col">Flyer</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            {{#each agenda}}
+            <tr>
+                <th scope="row">{{id}}</th>
+                <td>{{fecha}}</td>
+                <td>{{local}}</td>
+                <td>{{ciudad}}</td>
+                <td>{{{imagen}}}</td>
+                <td><a class="boton" href="/admin/agenda/editar/{{id}}">Editar</a></td>
+                <td><a class="boton" href="/admin/agenda/eliminar/{{id}}">Borrar</a></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+</div> 

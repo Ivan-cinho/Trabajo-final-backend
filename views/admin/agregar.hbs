@@ -1,0 +1,19 @@
+<main>
+    <section class="formcontainer">
+        <h2>★ Agregar evento ★</h2>
+        <form action="/admin/agenda/agregar" method="post" enctype="multipart/form-data" class="formulario">
+            <label class="form__label">Fecha</label>
+            <input type="text" name="fecha" class="form__input" />
+            <label class="form__label">Local</label>
+            <input type="text" name="local" class="form__input" />
+            <label class="form__label">Ciudad</label>
+            <input type="text" name="ciudad" class="form__input" />
+            <label class="form__label">Imagen</label>
+            <input type="file" name="imagen" class="form__input" />
+            <button class="boton" type="submit">Agregar</button>
+        </form><br>
+        {{#if error}}
+        <p>{{message}}</p>
+        {{/if}}
+    </section>
+</main>

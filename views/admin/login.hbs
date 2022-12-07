@@ -1,0 +1,16 @@
+
+        <main>
+            <section class="formcontainer">
+                <h2>★ Bilardistas ★</h2>
+                <form action="/admin/login" method="post" class  ="formulario">
+                    <label class="form__label">Usuario</label>
+                    <input type="text" name="usuario" class="form__input"/>
+                    <label class="form__label">Contraseña</label>
+                    <input type="text" name="password" class="form__input"/>
+                    <input type="submit" name="Enviar" class="form__enviar--submit"/>
+                </form><br>
+                {{#if error}}
+                <p>♫♪ ah ah aaaahhh, no dijiste la palabra magica ♫♪</p>
+                {{/if}}
+            </section>
+        </main>

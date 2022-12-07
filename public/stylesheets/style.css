@@ -1,0 +1,213 @@
+*{
+  font-family: "Anton", cursive;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  /* background-color: aqua; */
+  background-image: url(/images/fondo4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/*header */
+
+header{
+  display: flex;
+  border-bottom: 2px solid black;
+}
+nav{
+  display: flex;
+  margin: 1% 4% 1% 4%;
+  width: 100vw;
+}
+
+.logo {
+display: flex;
+background-image: url(/images/logo.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+height: 80px;
+width: 80px;
+}
+
+
+.navbar{
+width: 100%;
+display: flex;
+justify-content: flex-end;
+}
+
+/* footer */
+footer .seguinos {
+  background-color: black;
+  width: 100%;
+  height: 5vw;
+}
+
+
+/*FORMULARIO DE LOGUEO*/
+
+.formcontainer{
+  width: 50vw;
+  height: 45vw;
+  overflow: hidden;
+  margin: 5% auto;
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 6px 4px 5px 0px rgba(0, 0, 0, 0.29);
+}
+
+.formcontainer h2{
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  margin: 5%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.formulario{
+  margin: auto;
+  width: 70%;
+}
+
+.formulario .form__input{
+  width: 100%;
+}
+
+.formulario label{
+  font-family: "Anton", sans-serif;
+  font-size: x-large;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.formulario input{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: x-large;
+  color:rgba(0, 0, 0, 0.75);;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+  margin-bottom: 7%;
+}
+
+.formulario .form__enviar--submit {
+  font-family: "Anton", sans-serif;
+  font-size: x-large;
+  color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0);
+  border: solid rgba(0, 0, 0, 0.75) 2px;
+  padding: 0 1%;
+  transform: all;
+  transition: 0.7s;
+  display: flex;
+  margin: 5% auto;
+}
+
+.form__enviar--submit:hover {
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: 0.7s;
+}
+
+/*ADMINISTRADOR AGENDA*/
+
+.linea1{
+  margin: 5% auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.linea1 button {
+  margin-right: 0%;
+}
+
+.linea2{
+  width: 85%;
+  margin: auto;
+}
+.encabezado{
+  display: flex;
+  justify-content: space-between;
+}
+
+.encabezado button {
+  margin-right: 0%;
+}
+
+/*TABLA*/
+
+.table{
+  margin: 5% auto;
+  width: 85%;
+}
+
+th{
+  font-size: x-large;
+}
+
+td{
+  font-size: x-large;
+  font-weight: 400;
+}
+
+td a{
+  justify-content: center;
+}
+
+.boton{
+  margin: auto;
+  font-family: "Anton", sans-serif;
+  font-size: x-large;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid rgba(0, 0, 0, 0.75) 2px;
+  border-radius: none;
+  padding: 0 1%;
+  transform: all;
+  transition: 0.7s;
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75);
+  transition: 0.7s;
+  margin: auto;
+}
+a:hover{
+  color: #f2f2f2;
+  transition: 0.7s;
+}
+
+.boton:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: 0.7s;
+  color: #f2f2f2;
+}
+
+
+  
+p{
+  text-align: center;
+  font-size: x-large;
+}
+
+.check{
+  display: flex;
+}
+
+.check label{
+  width: 75%;
+}
+
+/* EDITAR */
+
+.checkbox{
+  width: 20%;
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+<main>
+    <section class="formcontainer">
+        <h2>★ Editar evento ★</h2>
+        <form action="/admin/agenda/editar" enctype="multipart/form-data" method="post" class="formulario">
+            <input type="hidden" value="{{agenda.id}}" name="id" />
+            <label class="form__label">Fecha</label>
+            <input type="text" value="{{agenda.fecha}}" name="fecha" class="form__input" />
+            <label class="form__label">Local</label>
+            <input type="text" value="{{agenda.local}}" name="local" class="form__input" />
+            <label class="form__label">Ciudad</label>
+            <input type="text" value="{{agenda.ciudad}}" name="ciudad" class="form__input" />
+
+            <label class="form__label">Imagen</label>
+            <input type="file" name="imagen" class="form__input" />
+            <div class="check">
+                <label class="form__label">Eliminar imagen<input type="checkbox" name="img_delete" value="1" class="checkbox" /></label>
+                <input type="hidden" name="img_original" value="{{agendado.img_id}}">
+            </div>
+            <button class="boton" type="submit">Editar</button>
+        </form><br>
+        {{#if error}}
+        <p>{{message}}</p>
+        {{/if}}
+    </section>
+</main>
